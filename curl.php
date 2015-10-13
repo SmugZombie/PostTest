@@ -1,9 +1,7 @@
 <?php
+// Simple POST Test via PHP cURL.
+// by regli via smugzombie.com
 session_start();
-
-/*if(isset($_POST['opt1field'])){
-        $_SESSION['user'] = $_POST['opt1field'];
-}*/
 
 if(!isset($_POST['url'])){
         echo "<center><h3>cURL Login Test</h3></center>
@@ -32,7 +30,7 @@ if(!isset($_POST['url'])){
                         if(tool == 'mt'){
                                 document.getElementsByTagName('input')[0].value = 'http://multitool.xyz/?login=true';
                                 document.getElementsByTagName('input')[1].value = 'username';
-                                document.getElementsByTagName('input')[2].value = 'regli';
+                                document.getElementsByTagName('input')[2].value = '';
                                 document.getElementsByTagName('input')[3].value = 'password';
                                 document.getElementsByTagName('input')[4].value = '';
                         }
